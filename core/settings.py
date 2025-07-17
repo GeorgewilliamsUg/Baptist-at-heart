@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-t%&d782168li&2w$cmhlig$&w3l73p&lmy(i$-t@s1=vt6=x&2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['baptist-at-heart.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
