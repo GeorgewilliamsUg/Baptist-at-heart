@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Contact Us - Baptist@Heart{% endblock %}
+
+{% block content %}
+<main class="main">
+  <!-- Hero Section -->
+  <div class="position-relative overflow-hidden bg-primary text-white py-5 mb-5">
+    <div class="container position-relative z-2">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold mb-3">Let's Connect</h1>
+          <p class="lead mb-0">We'd love to hear from you. Reach out to us through any of our channels below.</p>
+        </div>
+      </div>
+    </div>
+    <div class="position-absolute top-0 end-0 w-50 h-100 z-1 d-none d-lg-block" style="background: url('{% static 'img/pattern-dots.svg' %}') repeat;opacity:0.1"></div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Info Cards -->
+        <div class="col-lg-4">
+          <div class="contact-cards">
+            <!-- Location Card -->
+            <div class="card border-0 shadow-sm hover-lift mb-4 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box bg-primary bg-opacity-10 rounded-circle p-3">
+                    <i class="bi bi-geo-alt fs-4 text-primary"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="fw-bold mb-1">Visit Us</h5>
+                    <p class="mb-0 text-muted">Nakagere, Kagala Hill, Mukono</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="card border-0 shadow-sm hover-lift mb-4 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box bg-primary bg-opacity-10 rounded-circle p-3">
+                    <i class="bi bi-telephone fs-4 text-primary"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="fw-bold mb-1">Call Us</h5>
+                    <p class="mb-0 text-muted">+256 752 534560</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="card border-0 shadow-sm hover-lift mb-4 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box bg-primary bg-opacity-10 rounded-circle p-3">
+                    <i class="bi bi-envelope fs-4 text-primary"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="fw-bold mb-1">Email Us</h5>
+                    <p class="mb-0 text-muted">info@baptistatheart.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="card border-0 shadow-sm hover-lift mb-4 rounded-4">
+              <div class="card-body p-4">
+                <div class="d-flex align-items-center">
+                  <div class="icon-box bg-success bg-opacity-10 rounded-circle p-3">
+                    <i class="bi bi-whatsapp fs-4 text-success"></i>
+                  </div>
+                  <div class="ms-3">
+                    <h5 class="fw-bold mb-1">WhatsApp</h5>
+                    <a href="https://wa.me/256752534560" class="btn btn-success btn-sm rounded-pill mt-2">
+                      <i class="bi bi-whatsapp me-2"></i>Message Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-lg rounded-4">
+            <div class="card-body p-5">
+              <h3 class="fw-bold text-primary mb-4">Send Us a Message</h3>
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" id="message" name="message" placeholder="Message" style="height: 180px" required></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-grid gap-2">
+                      <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                        <i class="bi bi-send me-2"></i>Send Message
+                      </button>
+                    </div>
+                    <div class="mt-3">
+                      <div class="loading d-none">Loading...</div>
+                      <div class="error-message d-none"></div>
+                      <div class="sent-message d-none">Your message has been sent. Thank you!</div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="mt-5 rounded-4 overflow-hidden shadow-lg" data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.816800164705!2d32.68970105484918!3d0.43335475018715774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db6123ee6178f%3A0x422dd2287e3c2b13!2sBukerere!5e0!3m2!1sen!2sug!4v1753116916213!5m2!1sen!2sug" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock content %}
