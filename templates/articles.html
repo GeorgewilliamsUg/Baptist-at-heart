@@ -1,0 +1,260 @@
+      {% extends 'base.html' %}
+      {% load static %}
+      {% block content %}
+      <!-- Trending Category Section -->
+      <section id="trending-category" class="trending-category section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="container" data-aos="fade-up">
+            <div class="row g-5">
+              <div class="col-lg-4">
+                <div class="post-entry lg">
+                  <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-1.jpg' %}" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Faith & Practice</span> <span class="mx-1">•</span> <span>This Week</span></div>
+                  <h2><a href="{% url 'home' %}">Strengthening Your Prayer Life Through Baptist Spiritual Disciplines</a></h2>
+                  <p class="mb-4 d-block">Prayer is the cornerstone of Baptist spirituality. Discover time-tested practices from our rich heritage that will deepen your communion with God and strengthen your personal devotional life. Learn how Baptist leaders throughout history have cultivated intimate relationships with Christ through disciplined prayer and Scripture meditation.</p>
+
+                  <div class="d-flex align-items-center author">
+                    <div class="photo"><img src="{% static 'img/1.jpg' %}" alt="" class="img-fluid"></div>
+                    <div class="name">
+                      <h3 class="m-0 p-0">Pastor Magogo Thompson</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="row g-5">
+                  <div class="col-lg-4 border-start custom-border">
+                    <div class="post-entry">
+                      <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-2.jpg' %}" alt="" class="img-fluid"></a>
+                      <div class="post-meta"><span class="date">Church Life</span> <span class="mx-1">•</span> <span>Recent</span></div>
+                      <h2><a href="{% url 'home' %}">Building Biblical Community in Your Local Church</a></h2>
+                    </div>
+                    <div class="post-entry">
+                      <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-5.jpg' %}" alt="" class="img-fluid"></a>
+                      <div class="post-meta"><span class="date">Scripture Study</span> <span class="mx-1">•</span> <span>Weekly</span></div>
+                      <h2><a href="{% url 'home' %}">Expository Preaching: The Baptist Commitment to God's Word</a></h2>
+                    </div>
+                    <div class="post-entry">
+                      <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-7.jpg' %}" alt="" class="img-fluid"></a>
+                      <div class="post-meta"><span class="date">Discipleship</span> <span class="mx-1">•</span> <span>Featured</span></div>
+                      <h2><a href="{% url 'home' %}">Mentoring New Believers: A Baptist Approach to Spiritual Growth</a></h2>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 border-start custom-border">
+                    <div class="post-entry">
+                      <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-3.jpg' %}" alt="" class="img-fluid"></a>
+                      <div class="post-meta"><span class="date">Mission</span> <span class="mx-1">•</span> <span>Current</span></div>
+                      <h2><a href="{% url 'home' %}">The Great Commission: Baptist Passion for Evangelism and Missions</a></h2>
+                    </div>
+                    <div class="post-entry">
+                      <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-6.jpg' %}" alt="" class="img-fluid"></a>
+                      <div class="post-meta"><span class="date">Heritage</span> <span class="mx-1">•</span> <span>Historical</span></div>
+                      <h2><a href="{% url 'home' %}">Learning from Baptist Pioneers: Lessons in Faith and Courage</a></h2>
+                    </div>
+                    <div class="post-entry">
+                      <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-8.jpg' %}" alt="" class="img-fluid"></a>
+                      <div class="post-meta"><span class="date">Worship</span> <span class="mx-1">•</span> <span>Practical</span></div>
+                      <h2><a href="{% url 'home' %}">Authentic Worship: Baptist Principles for Meaningful Church Services</a></h2>
+                    </div>
+                  </div>
+
+                  <!-- Trending Section -->
+                  <div class="col-lg-4">
+                    <div class="trending">
+                      <h3>Most Read This Week</h3>
+                      <ul class="trending-post">
+                        <li>
+                          <a href="{% url 'home' %}">
+                            <span class="number">1</span>
+                            <h3>Walking in Biblical Truth: A Baptist's Guide to Daily Discipleship</h3>
+                            <span class="author">Dr. Sarah Kirabira</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="{% url 'home' %}">
+                            <span class="number">2</span>
+                            <h3>The Priesthood of All Believers: Embracing Your Calling in Church Life</h3>
+                            <span class="author">Rev. David Buyiika</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="{% url 'home' %}">
+                            <span class="number">3</span>
+                            <h3>Soul Liberty and Cultural Engagement: Standing Firm in Truth with Grace</h3>
+                            <span class="author">Pastor Matovu Chen</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="{% url 'home' %}">
+                            <span class="number">4</span>
+                            <h3>Church Autonomy and Unity: Balancing Independence with Fellowship</h3>
+                            <span class="author">Dr. Robert Williams</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="{% url 'home' %}">
+                            <span class="number">5</span>
+                            <h3>Biblical Stewardship: Managing God's Gifts with Baptist Wisdom</h3>
+                            <span class="author">Deacon Mary Rodriguez</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div> <!-- End Trending Section -->
+                </div>
+              </div>
+            </div> <!-- End .row -->
+          </div>
+        </div>
+      </section><!-- /Trending Category Section -->
+
+      <!-- Culture Category Section -->
+      <section id="culture-category" class="culture-category section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <div class="section-title-container d-flex align-items-center justify-content-between">
+            <h2>Faith & Culture</h2>
+            <p><a href="{% url 'home' %}">Explore All Cultural Reflections</a></p>
+          </div>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="d-lg-flex post-entry">
+                <a href="{% url 'home' %}" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
+                  <img src="{% static 'img/post-landscape-6.jpg' %}" alt="" class="img-fluid">
+                </a>
+                <div>
+                  <div class="post-meta"><span class="date">Faith & Culture</span> <span class="mx-1">•</span> <span>Current Issue</span></div>
+                  <h3><a href="{% url 'home' %}">Engaging Modern Media: A Baptist Perspective on Digital Discipleship</a></h3>
+                  <p>How can Baptist believers navigate social media, streaming platforms, and digital communication while maintaining biblical values? This reflection offers practical wisdom for using technology as a tool for ministry and spiritual growth rather than distraction.</p>
+                  <div class="d-flex align-items-center author">
+                    <div class="photo"><img src="{% static 'img/person-2.jpg' %}" alt="" class="img-fluid"></div>
+                    <div class="name">
+                      <h3 class="m-0 p-0">Pastor James Wilson</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="post-list border-bottom">
+                    <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-1.jpg' %}" alt="" class="img-fluid"></a>
+                    <div class="post-meta"><span class="date">Faith & Culture</span> <span class="mx-1">•</span> <span>Weekly Digest</span></div>
+                    <h2 class="mb-2"><a href="{% url 'home' %}">Christian Education: Baptist Principles for Raising Godly Children</a></h2>
+                    <span class="author mb-3 d-block">Dr. Rebecca Martinez</span>
+                    <p class="mb-4 d-block">Discover how Baptist convictions about biblical authority and family discipleship can guide parents in raising children who love God and live according to His Word.</p>
+                  </div>
+
+                  <div class="post-list">
+                    <div class="post-meta"><span class="date">Faith & Culture</span> <span class="mx-1">•</span> <span>Timely</span></div>
+                    <h2 class="mb-2"><a href="{% url 'home' %}">Workplace Witness: Living Out Baptist Values in Professional Life</a></h2>
+                    <span class="author mb-3 d-block">Deacon Mark Thompson</span>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="post-list">
+                    <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-2.jpg' %}" alt="" class="img-fluid"></a>
+                    <div class="post-meta"><span class="date">Faith & Culture</span> <span class="mx-1">•</span> <span>Essential Reading</span></div>
+                    <h2 class="mb-2"><a href="{% url 'home' %}">Biblical Justice: How Baptists Approach Social Issues with Scripture</a></h2>
+                    <span class="author mb-3 d-block">Rev. Angela Davis</span>
+                    <p class="mb-4 d-block">Explore how Baptist commitment to biblical authority guides our understanding of justice, mercy, and compassion in addressing contemporary social challenges.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="post-list border-bottom">
+                <div class="post-meta"><span class="date">Faith & Culture</span> <span class="mx-1">•</span> <span>Popular</span></div>
+                <h2 class="mb-2"><a href="{% url 'home' %}">Hospitality as Ministry: Baptist Traditions of Welcome and Service</a></h2>
+                <span class="author mb-3 d-block">Sister Ruth Johnson</span>
+              </div>
+
+              <div class="post-list border-bottom">
+                <div class="post-meta"><span class="date">Faith & Culture</span> <span class="mx-1">•</span> <span>Trending</span></div>
+                <h2 class="mb-2"><a href="{% url 'home' %}">Marriage and Family: Baptist Foundations for Strong Relationships</a></h2>
+                <span class="author mb-3 d-block">Pastor Jennifer Lee</span>
+              </div>
+
+              <div class="post-list border-bottom">
+                <div class="post-meta"><span class="date">Faith & Culture</span> <span class="mx-1">•</span> <span>Featured</span></div>
+                <h2 class="mb-2"><a href="{% url 'home' %}">Community Service: Baptist Calling to Love Our Neighbors</a></h2>
+                <span class="author mb-3 d-block">Deacon Paul Anderson</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- /Culture Category Section -->
+
+      <!-- Business Category Section -->
+      <section id="business-category" class="business-category section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <div class="section-title-container d-flex align-items-center justify-content-between">
+            <h2>Church Leadership</h2>
+            <p><a href="{% url 'home' %}">View All Leadership Resources</a></p>
+          </div>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-md-9 order-md-2">
+              <div class="d-lg-flex post-entry">
+                <a href="{% url 'home' %}" class="me-4 thumbnail d-inline-block mb-4 mb-lg-0">
+                  <img src="{% static 'img/post-landscape-3.jpg' %}" alt="" class="img-fluid">
+                </a>
+                <div>
+                  <div class="post-meta"><span class="date">Church Leadership</span> <span class="mx-1">•</span> <span>Leadership Focus</span></div>
+                  <h3><a href="{% url 'home' %}">Pastoral Care in the Digital Age: Shepherding God's Flock with Wisdom</a></h3>
+                  <p>Modern pastors face unique challenges in caring for their congregations. This reflection explores how Baptist principles of pastoral ministry adapt to contemporary needs while maintaining biblical foundations for shepherding God's people with love and truth.</p>
+                  <div class="d-flex align-items-center author">
+                    <div class="photo"><img src="{% static 'img/person-4.jpg' %}" alt="" class="img-fluid"></div>
+                    <div class="name">
+                      <h3 class="m-0 p-0">Dr. Timothy Foster</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-4">
+                              <div class="post-list border-bottom">
+                                <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-5.jpg' %}" alt="" class="img-fluid"></a>
+                                <div class="post-meta"><span class="date">Church Leadership</span> <span class="mx-1">•</span> <span>Resource</span></div>
+                                <h2 class="mb-2"><a href="{% url 'home' %}">Leading with Integrity: Baptist Principles for Church Governance</a></h2>
+                                <span class="author mb-3 d-block">Rev. Samuel Okello</span>
+                                <p class="mb-4 d-block">Explore how Baptist leaders can foster transparency, accountability, and spiritual growth in their congregations through biblical governance and servant leadership.</p>
+                              </div>
+                            </div>
+                            <div class="col-lg-8">
+                              <div class="post-list">
+                                <a href="{% url 'home' %}"><img src="{% static 'img/post-landscape-8.jpg' %}" alt="" class="img-fluid"></a>
+                                <div class="post-meta"><span class="date">Church Leadership</span> <span class="mx-1">•</span> <span>Featured</span></div>
+                                <h2 class="mb-2"><a href="{% url 'home' %}">Equipping Deacons: Baptist Models for Ministry Support</a></h2>
+                                <span class="author mb-3 d-block">Deacon Grace Namatovu</span>
+                                <p class="mb-4 d-block">Learn practical strategies for empowering deacons and lay leaders to serve effectively in Baptist churches.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 order-md-1">
+                          <div class="post-list border-bottom">
+                            <div class="post-meta"><span class="date">Church Leadership</span> <span class="mx-1">•</span> <span>Popular</span></div>
+                            <h2 class="mb-2"><a href="{% url 'home' %}">Conflict Resolution: Baptist Approaches to Church Unity</a></h2>
+                            <span class="author mb-3 d-block">Pastor John Musoke</span>
+                          </div>
+                          <div class="post-list border-bottom">
+                            <div class="post-meta"><span class="date">Church Leadership</span> <span class="mx-1">•</span> <span>Trending</span></div>
+                            <h2 class="mb-2"><a href="{% url 'home' %}">Vision Casting: Inspiring Your Congregation for Mission</a></h2>
+                            <span class="author mb-3 d-block">Dr. Linda Kaggwa</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section><!-- /Business Category Section -->
+                  {% endblock %}
+

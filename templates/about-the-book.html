@@ -1,0 +1,438 @@
+{% extends 'base.html' %}   
+{% load static %}
+
+{% block title %}About Baptist at Heart - A Journey of Faith and Resilience{% endblock %}
+
+{% block content %}
+<!-- Remove duplicate header since base.html already has hero section -->
+<!-- Book Showcase Section -->
+<section class="book-showcase py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="book-cover-container text-center">
+          <img src="{% static 'img/book.png' %}" alt="Baptist at Heart Cover" class="book-cover img-fluid shadow-lg">
+          <div class="book-badges mt-3">
+            <span class="badge bg-primary">New Release</span>
+            <span class="badge bg-success">4.7★ Rating</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="book-details">
+          <h1 class="display-4 fw-bold text-primary mb-3">Baptist at Heart</h1>
+          <h2 class="h4 text-muted mb-4">A Journey of Faith and Resilience</h2>
+          
+          <div class="book-stats row g-3 mb-4">
+            <div class="col-6 col-md-3">
+              <div class="stat-card text-center p-3 bg-light rounded">
+                <div class="h5 fw-bold text-primary mb-1">250</div>
+                <small class="text-muted">Pages</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card text-center p-3 bg-light rounded">
+                <div class="h5 fw-bold text-primary mb-1">8hrs</div>
+                <small class="text-muted">Read Time</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card text-center p-3 bg-light rounded">
+                <div class="h5 fw-bold text-primary mb-1">4.7</div>
+                <small class="text-muted">Rating</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card text-center p-3 bg-light rounded">
+                <div class="h5 fw-bold text-primary mb-1">2024</div>
+                <small class="text-muted">Published</small>
+              </div>
+            </div>
+          </div>
+
+          <blockquote class="blockquote border-start border-primary border-4 ps-4 mb-4">
+            <p class="mb-2 fst-italic">"Faith is not just a belief; it's a way of life."</p>
+            <footer class="blockquote-footer">Featured Quote</footer>
+          </blockquote>
+
+          <div class="cta-buttons d-flex flex-wrap gap-3">
+            <a href="#purchase" class="btn btn-primary btn-lg">
+              <i class="bi bi-cart-plus me-2"></i>Pre-order Now
+            </a>
+            <a href="#preview" class="btn btn-outline-primary btn-lg">
+              <i class="bi bi-book me-2"></i>Read Free Preview
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Book Description Section -->
+<section class="book-description py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-center mb-5">About This Book</h2>
+        <div class="description-content">
+          <p class="lead">Discover the profound stories of faith that have shaped the Baptist tradition for generations. "Baptist at Heart" takes you on an inspiring journey through tales of resilience, devotion, and unwavering belief.</p>
+          
+          <div class="row g-4 mt-4">
+            <div class="col-md-6">
+              <div class="feature-box">
+                <i class="bi bi-heart-fill text-primary fs-3 mb-3"></i>
+                <h4>Authentic Stories</h4>
+                <p>Real testimonies of faith from Baptist communities worldwide.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-box">
+                <i class="bi bi-book-fill text-primary fs-3 mb-3"></i>
+                <h4>Biblical Foundation</h4>
+                <p>Every story grounded in Scripture and Baptist principles.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-box">
+                <i class="bi bi-people-fill text-primary fs-3 mb-3"></i>
+                <h4>Community Focus</h4>
+                <p>Celebrating the strength found in Baptist fellowship.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature-box">
+                <i class="bi bi-star-fill text-primary fs-3 mb-3"></i>
+                <h4>Inspiring Content</h4>
+                <p>Stories that will strengthen and encourage your faith journey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About the Author Section -->
+<section class="about-author py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Meet the Author</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <img src="{% static 'img/author.jpg' %}" alt="Author Photo" class="author-photo rounded-circle img-fluid shadow" style="width: 250px; height: 250px; object-fit: cover;">
+      </div>
+      <div class="col-lg-8">
+        <div class="author-bio">
+          <h3 class="mb-3">Azarius Nelson Kibaya</h3>
+          <p class="lead mb-4">A dedicated Husband, Father, Pastor, and theologian committed to preserving the rich stories of faith and resilience within the Baptist tradition.</p>
+          
+          <div class="author-stats row g-3 mb-4">
+            <div class="col-md-4">
+              <div class="stat-item text-center p-3 bg-light rounded">
+                <div class="h4 fw-bold text-primary mb-1">3</div>
+                <small class="text-muted">Books Published</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-item text-center p-3 bg-light rounded">
+                <div class="h4 fw-bold text-primary mb-1">4.6★</div>
+                <small class="text-muted">Average Rating</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="stat-item text-center p-3 bg-light rounded">
+                <div class="h4 fw-bold text-primary mb-1">15+</div>
+                <small class="text-muted">Years Experience</small>
+              </div>
+            </div>
+          </div>
+
+          <p class="mb-3">Nelson's work focuses on documenting and sharing the powerful testimonies that define Baptist heritage, bringing these timeless stories to modern readers seeking inspiration and spiritual growth.</p>
+          
+          <div class="author-contact">
+            <a href="mailto:john.doe@example.com" class="btn btn-outline-primary">
+              <i class="bi bi-envelope me-2"></i>Contact Author
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials py-5 bg-primary text-white">
+  <div class="container">
+    <h2 class="text-center mb-5">What Readers Are Saying</h2>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="testimonial-card bg-white text-dark p-4 rounded shadow h-100">
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+          <blockquote class="mb-3">
+            <p class="fst-italic">"Baptist at Heart is a must-read for anyone seeking inspiration and hope in their spiritual journey. The stories are both moving and transformative."</p>
+          </blockquote>
+          <footer class="d-flex align-items-center">
+            <img src="{% static 'images/reviewer1.jpg' %}" alt="Pastor Kagoda" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+            <div>
+              <strong>Pastor Mark Kasooto</strong><br>
+              <small class="text-muted">First Baptist Church</small>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="testimonial-card bg-white text-dark p-4 rounded shadow h-100">
+          <div class="stars mb-3">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+          <blockquote class="mb-3">
+            <p class="fst-italic">"A powerful reminder of the enduring strength of faith in challenging times. This book has strengthened my own walk with Christ."</p>
+          </blockquote>
+          <footer class="d-flex align-items-center">
+            <img src="{% static 'images/reviewer2.jpg' %}" alt="Sarah Johnson" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;">
+            <div>
+              <strong>Sarah Johnson Mukiibi</strong><br>
+              <small class="text-muted">Verified Reader</small>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Free Preview Section -->
+<section id="preview" class="preview-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mb-4">Read a Free Preview</h2>
+        <p class="lead mb-4">Get a taste of the inspiring stories waiting for you in "Baptist at Heart"</p>
+        <div class="preview-box bg-light p-4 rounded text-start mb-4">
+          <h4>Chapter 1: The Foundation of Faith</h4>
+          <p class="fst-italic">"In the small town of Millbrook, where the church bells rang every Sunday morning, lived a community whose faith would be tested in ways they never imagined..."</p>
+          <p>The story begins with Martha Henderson, a devoted Baptist who had attended the same church for over forty years. Her unwavering faith would soon become a beacon of hope for an entire community facing unprecedented challenges...</p>
+          <div class="text-center mt-3">
+            <small class="text-muted">Continue reading in the full book...</small>
+          </div>
+        </div>
+        <a href="#purchase" class="btn btn-primary btn-lg">Get the Full Book</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Purchase Options Section -->
+<section id="purchase" class="purchase-options py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Get Your Copy Today</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="purchase-card text-center p-4 bg-white rounded shadow h-100">
+          <i class="bi bi-book text-primary fs-1 mb-3"></i>
+          <h4>Physical Copy</h4>
+          <p class="text-muted mb-3">Traditional paperback edition</p>
+          <div class="price mb-3">
+            <span class="h3 fw-bold text-primary">$19.99</span>
+          </div>
+          <a href="{% url 'about-the-book' %}" class="btn btn-primary w-100">Order Paperback</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="purchase-card text-center p-4 bg-white rounded shadow h-100 position-relative">
+          <div class="badge bg-success position-absolute top-0 start-50 translate-middle">Most Popular</div>
+          <i class="bi bi-tablet text-primary fs-1 mb-3"></i>
+          <h4>E-book</h4>
+          <p class="text-muted mb-3">Instant digital download</p>
+          <div class="price mb-3">
+            <span class="h3 fw-bold text-primary">$12.99</span>
+          </div>
+          <a href="{% url 'about-the-book' %}" class="btn btn-primary w-100">Download E-book</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="purchase-card text-center p-4 bg-white rounded shadow h-100">
+          <i class="bi bi-headphones text-primary fs-1 mb-3"></i>
+          <h4>Audiobook</h4>
+          <p class="text-muted mb-3">Professional narration</p>
+          <div class="price mb-3">
+            <span class="h3 fw-bold text-primary">$16.99</span>
+          </div>
+          <a href="{% url 'about-the-book' %}" class="btn btn-primary w-100">Get Audiobook</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-5">
+      <p class="mb-3"><strong>Special Launch Offer:</strong> Save 20% when you order before December 31st!</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <span class="badge bg-success p-2">Free Shipping</span>
+        <span class="badge bg-primary p-2">
+          <i class="bi bi-shield-check"></i> 30-Day Money-Back Guarantee  
+        </span>
+        <span class="badge bg-info p-2">30-Day Money Back</span>
+        <span class="badge bg-warning p-2">Instant Download</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Signup Section -->
+<section class="newsletter-signup py-5 bg-primary text-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="mb-4">Stay Connected</h2>
+        <p class="lead mb-4">Get updates on new releases, exclusive content, and special offers from the author</p>
+        <form class="newsletter-form">
+          <div class="row g-3 justify-content-center">
+            <div class="col-md-6">
+              <input type="email" class="form-control form-control-lg" placeholder="Enter your email address" required>
+            </div>
+            <div class="col-md-auto">
+              <button type="submit" class="btn btn-light btn-lg">
+                <i class="bi bi-envelope me-2"></i>Subscribe
+              </button>
+            </div>
+          </div>
+          <small class="d-block mt-3 opacity-75">We respect your privacy. Unsubscribe at any time.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Related Content Section -->
+<section class="related-content py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">You Might Also Like</h2>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="content-card bg-light p-4 rounded h-100">
+          <i class="bi bi-journal-text text-primary fs-2 mb-3"></i>
+          <h4>Weekly Digests</h4>
+          <p class="mb-3">Receive weekly spiritual insights and reflections delivered to your inbox.</p>
+          <a href="{% url 'about' %}" class="btn btn-outline-primary">Explore Digests</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="content-card bg-light p-4 rounded h-100">
+          <i class="bi bi-people text-primary fs-2 mb-3"></i>
+          <h4>Faith Community</h4>
+          <p class="mb-3">Join our growing community of believers sharing their faith journeys.</p>
+          <a href="{% url 'contact' %}" class="btn btn-outline-primary">Join Community</a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="content-card bg-light p-4 rounded h-100">
+          <i class="bi bi-book-half text-primary fs-2 mb-3"></i>
+          <h4>Study Resources</h4>
+          <p class="mb-3">Access additional study materials and discussion guides for the book.</p>
+          <a href="#" class="btn btn-outline-primary">View Resources</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                When will the book be available?
+              </button>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                "Baptist at Heart" is currently available for pre-order and will be released on January 15, 2024. E-book and audiobook versions will be available simultaneously.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Is this book suitable for all ages?
+              </button>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! "Baptist at Heart" is written for readers of all ages who are interested in faith stories and Baptist heritage. The content is appropriate for teenagers and adults.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Are there study guides available?
+              </button>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes! We offer downloadable study guides perfect for small groups, Sunday school classes, and personal reflection. These will be available free with your purchase.
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Can I get a signed copy?
+              </button>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Limited signed copies are available for pre-order. These special editions include a personal message from the author and are perfect for gifts or personal collections.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="final-cta py-5 bg-primary text-white text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="mb-4">Ready to Begin Your Journey?</h2>
+        <p class="lead mb-4">Join thousands of readers discovering the heart of Baptist faith through these inspiring stories.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#purchase" class="btn btn-light btn-lg">
+            <i class="bi bi-cart-plus me-2"></i>Order Now
+          </a>
+          <a href="{% url 'contact' %}" class="btn btn-outline-light btn-lg">
+            <i class="bi bi-chat-dots me-2"></i>Ask Questions
+          </a>
+        </div>
+        <div class="mt-4">
+          <small class="opacity-75">
+            <i class="bi bi-shield-check me-2"></i>
+            Secure checkout • 30-day money-back guarantee • Free shipping on orders over $25
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

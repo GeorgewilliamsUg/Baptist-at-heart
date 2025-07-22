@@ -1,0 +1,128 @@
+/* Book Showcase Section */
+.book-showcase {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.book-cover-container {
+    position: relative;
+}
+
+.book-cover {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+}
+
+.book-badges .badge {
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+}
+
+/* Stats Cards */
+.stat-card, .stat-item {
+    transition: transform 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.stat-card:hover, .stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Feature Boxes */
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Author Section */
+.author-photo {
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Purchase Cards */
+.purchase-card {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.purchase-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--bs-primary);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Preview Section */
+.preview-box {
+    border-left: 4px solid var(--bs-primary);
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* Newsletter Form */
+.newsletter-form .form-control:focus {
+    border-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.25);
+}
+
+/* Content Cards */
+.content-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-cover {
+        max-width: 250px;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Animation for scroll effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    animation: fadeInUp 0.6s ease-out;
+}

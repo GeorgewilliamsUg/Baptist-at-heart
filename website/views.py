@@ -19,5 +19,11 @@ def category(request, category_name):
 def single_post(request, post_id):
     return render(request, 'single-ost.html', {'post_id': post_id})
 
+def about_the_book(request):
+    return render(request, 'about-the-book.html')
+
+def articles(request):
+    return render(request, 'articles.html')
+
 
 # Create your views here.

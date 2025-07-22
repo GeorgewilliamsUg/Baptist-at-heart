@@ -20,9 +20,9 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #535353; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #465367; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #000000; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #065a65; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #f5f7fa; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -454,6 +454,12 @@ h6 {
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
+.footer.light-background {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef; /* Optional: subtle border */
+    color: #000000; /* Default text color */
+}
+
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -463,7 +469,7 @@ h6 {
 
 .footer .footer-top {
   padding-top: 50px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 10%);
 }
 
 .footer .footer-about .logo {
@@ -499,7 +505,7 @@ h6 {
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-right: 10px;
+  margin-left: 10px;
   transition: 0.3s;
 }
 
