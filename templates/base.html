@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
+  {% load static %}
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{% block title %}Baptist@Heart - Weekly Spiritual Digests for Christ-Centered Living{% endblock %}</title>
-    <meta name="description" content="Baptist@Heart delivers weekly spiritual digests rooted in Scripture and Baptist tradition. Strengthen your faith, deepen your convictions, and engage with a mission-driven community of believers." />
-    <meta name="keywords" content="Baptist, spiritual digest, Christian faith, Scripture, weekly devotional, Baptist tradition, Christ-centered, biblical reflection" />
+    <title>
+      {% block title %}Baptist@Heart - Weekly Spiritual Digests for
+      Christ-Centered Living{% endblock %}
+    </title>
+    <meta
+      name="description"
+      content="Baptist@Heart delivers weekly spiritual digests rooted in Scripture and Baptist tradition. Strengthen your faith, deepen your convictions, and engage with a mission-driven community of believers."
+    />
+    <meta
+      name="keywords"
+      content="Baptist, spiritual digest, Christian faith, Scripture, weekly devotional, Baptist tradition, Christ-centered, biblical reflection"
+    />
 
     <!-- Favicons -->
     <link href="{% static 'img/favicon.png' %}" rel="icon" />
@@ -20,50 +29,84 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
-    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}"
+      rel="stylesheet"
+    />
     <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet" />
-    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
+    <link
+      href="{% static 'vendor/swiper/swiper-bundle.min.css' %}"
+      rel="stylesheet"
+    />
 
     <!-- Main CSS File -->
     <link href="{% static 'css/main.css' %}" rel="stylesheet" />
     <link href="{% static 'css/nav.css' %}" rel="stylesheet" />
     <link href="{% static 'css/about-the-book.css' %}" rel="stylesheet" />
-
   </head>
 
   <body class="home-page">
- <!-- ======= Header ======= -->
-<header id="header" class="header d-flex align-items-center sticky-top glassy-nav shadow-sm">
-  <div class="container d-flex align-items-center justify-content-between py-2">
-    <!-- Logo -->
-    <a href="{% url 'home' %}" class="logo d-flex align-items-center">
-      <img src="{% static 'img/logo.png' %}" alt="Baptist at Heart Logo" class="logo-img" />
-    </a>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header d-flex align-items-center sticky-top glassy-nav shadow-sm"
+    >
+      <div
+        class="container d-flex align-items-center justify-content-between py-2"
+      >
+        <!-- Logo -->
+        <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+          <img
+            src="{% static 'img/logo.png' %}"
+            alt="Baptist at Heart Logo"
+            class="logo-img"
+          />
+        </a>
 
-    <!-- Navigation -->
-    <nav id="navmenu" class="navmenu">
-      <ul class="d-flex gap-4 align-items-center mb-0">
-        <li><a href="{% url 'home' %}" class="nav-link active">Home</a></li>
-        <li><a href="{% url 'articles' %}" class="nav-link">Weekly Digests</a></li>
-        <li><a href="{% url 'about' %}" class="nav-link">About Our Mission</a></li>
-        <li><a href="{% url 'about-the-book' %}" class="nav-link">Look at the book</a></li>
-        <li><a href="{% url 'contact' %}" class="nav-link">Connect</a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
-  </div>
-</header>
+        <!-- Navigation -->
+        <nav id="navmenu" class="navmenu">
+          <ul class="d-flex gap-4 align-items-center mb-0">
+            <li><a href="{% url 'home' %}" class="nav-link active">Home</a></li>
+            <li>
+              <a href="{% url 'articles' %}" class="nav-link">Weekly Digests</a>
+            </li>
+            <li>
+              <a href="{% url 'about' %}" class="nav-link">About Our Mission</a>
+            </li>
+            <li>
+              <a href="{% url 'about-the-book' %}" class="nav-link"
+                >Look at the book</a
+              >
+            </li>
+            <li><a href="{% url 'contact' %}" class="nav-link">Connect</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="hero-section d-flex align-items-center justify-content-center text-center">
-  <div class="container">
-    <h1 class="hero-title">Strengthen Your Faith with <span>Baptist at Heart</span></h1>
-    <p class="hero-subtitle">Weekly Spiritual Digests That Inspire, Inform, and Ignite Christ-Centered Living</p>
-    <a href="{% url 'about' %}" class="btn btn-primary hero-btn">Discover Your Weekly Digest</a>
-  </div>
-</section>
-
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="hero-section d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="container">
+        <h1 class="hero-title">
+          Strengthen Your Faith with <span>Baptist at Heart</span>
+        </h1>
+        <p class="hero-subtitle">
+          Weekly Spiritual Digests That Inspire, Inform, and Ignite
+          Christ-Centered Living
+        </p>
+        <a href="{% url 'about' %}" class="btn btn-primary hero-btn"
+          >Discover Your Weekly Digest</a
+        >
+      </div>
+    </section>
 
     <main class="main">{% block content %} {% endblock %}</main>
 
@@ -77,13 +120,20 @@
             <div class="footer-contact pt-3">
               <p>Rooted in Scripture, shaped by Baptist tradition</p>
               <p>Strengthening believers worldwide</p>
-              <p class="mt-3">
-                      </div>
+            </div>
             <div class="social-links d-flex mt-4">
-              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
             </div>
           </div>
 
